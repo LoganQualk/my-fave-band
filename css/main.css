@@ -1,18 +1,20 @@
 body {
     margin: 0;
+    font-family: Montserrat, sans-serif;
+    line-height: 1.5;
 }
 
 /* main {
     margin: 1rem;
 } */
 
-main, 
-header section {
+main {
     margin: 1rem;
 }
 
 img {
     width: 100%;
+    display: block;
 }
 
 figure {
@@ -29,13 +31,48 @@ li {
     margin-bottom: 1.5rem;
 }
 
+nav {
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .2);
+}
+
+.bg-black {
+    background: black;
+}
+
+.text-white {
+    color: white;
+}
+
 .logo {
     max-width: 3rem;
+}
+
+.max-width-prose {
+    max-width: 75ch;
+}
+
+.mx-2 {
+    margin: 0 2rem;
+}
+
+.p-1 {
+    padding: 1rem;
 }
 
 @media screen and (min-width: 50em) {
     .flex {
         display: flex;
+    }
+
+    .justify-center {
+        justify-content: center;
+    }
+
+    .align-center {
+        align-items: center;
+    }
+
+    .gap-1 {
         gap: 1rem;
     }
 
